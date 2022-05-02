@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {  
         
         System.out.println("Terminei a primeira aula com um programa Java!");
-  
+
     }  
 }
 ```
@@ -53,3 +53,32 @@ public class Main{
     }
 }
 ```
+
+### 7) Experimente escrever todo o programa anterior em maiúsculo, compile e execute. O que aconteceu?
+
+```java
+PUBLIC CLASS MAIN {
+
+    PUBLIC STATIC VOID MAIN(STRING[] ARGS) {
+
+        SYSTEM.OUT.PRINTLN("MEU NOME É: JOÃO");
+        SYSTEM.OUT.PRINTLN("EU TORÇO PRO CORINTHIANS");
+
+    }
+}
+```
+
+```bash
+$ Main.java:1: error: class, interface, or enum expected
+PUBLIC CLASS MAIN {
+^
+Main.java:6: error: class, interface, or enum expected
+        SYSTEM.OUT.PRINTLN("EU TORÇO PRO CORINTHIANS");
+        ^
+Main.java:8: error: class, interface, or enum expected
+    }
+    ^
+3 errors
+```
+
+7. Não foi possível compilar, pois por uma diversidade de motivos, o código escrito não é um código Java válido.
