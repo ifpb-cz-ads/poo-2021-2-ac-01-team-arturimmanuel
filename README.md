@@ -82,3 +82,14 @@ Main.java:8: error: class, interface, or enum expected
 ```
 
 7. Não foi possível compilar, pois por uma diversidade de motivos, o código escrito não é um código Java válido.
+
+### 8) Experimente salvar o arquivo com um nome diferente do nome da classe,compile e execute. O que aconteceu?
+
+```bash
+$ Start.java:3: error: class Main is public, should be declared in a file named Main.java
+public class Main { 
+       ^
+1 error
+```
+
+8. O erro aconteceu já que meu arquivo não tem o mesmo nome que a classe então ele falhou na compilação. E como o nome da classe é Main, ele indica que o arquivo deve ser chamar Main.java
