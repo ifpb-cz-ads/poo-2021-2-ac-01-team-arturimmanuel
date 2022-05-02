@@ -1,5 +1,3 @@
-### 3) Crie um programa Java que imprima o seguinte texto “Terminei a primeira aula com um programa Java"
-
 ### 1) Explique qual a função da Máquina Virtual Java (JVM).
 
 1) A JVM tem como função interpretar o bytecode gerado pela compilação de um código Java e o tornar um código de máquina executável. Dessa forma, a JVM é uma máquina virtual que emula a aplicação Java, o que permite que essa aplicação seja executada em diferentes sistemas, dada a condição que esse sistema esteja equipado com sua JVM específica, garantindo a portabilidade e permitindo ao desenvolvedor criar aplicações Java multiplataforma eficientemente.
@@ -12,10 +10,21 @@
 
 ### 3) Crie um programa Java que imprima o seguinte texto “Terminei a primeira aula com um programa Java"
 
-```
+```java
 public class Main {  
+
  public static void main(String[] args) {  
-     System.out.println("Terminei a primeira aula com um programa Java!");  
- }  
+
+     System.out.println("Terminei a primeira aula com um programa Java!");  
+    }  
 }
 ```
+
+### 4) Compile o programa desenvolvido no exercício anterior. A seguir, apague o arquivo ".class" gerado e tente executar o programa. O que aconteceu?
+
+```bash
+$ Erro: Não foi possível localizar nem carregar a classe principal Main
+Causada por: java.lang.ClassNotFoundException: Main     
+```
+
+4. Nos deparamos com o erro acima por que a JVM não achou o bytecode para executar.
