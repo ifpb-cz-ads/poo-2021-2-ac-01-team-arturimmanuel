@@ -1,5 +1,3 @@
-### 5) Mude o nome do método “main” para “start”, compile e execute. O que aconteceu?
-
 ### 1) Explique qual a função da Máquina Virtual Java (JVM).
 
 1) A JVM tem como função interpretar o bytecode gerado pela compilação de um código Java e o tornar um código de máquina executável. Dessa forma, a JVM é uma máquina virtual que emula a aplicação Java, o que permite que essa aplicação seja executada em diferentes sistemas, dada a condição que esse sistema esteja equipado com sua JVM específica, garantindo a portabilidade e permitindo ao desenvolvedor criar aplicações Java multiplataforma eficientemente.
@@ -15,10 +13,11 @@
 ```java
 public class Main {  
 
- public static void main(String[] args) {  
-
-     System.out.println("Terminei a primeira aula com um programa Java!");  
-    }  
+    public static void main(String[] args) {  
+        
+        System.out.println("Terminei a primeira aula com um programa Java!");
+  
+    }  
 }
 ```
 
@@ -40,3 +39,17 @@ ou uma classe de aplicativo JavaFX deve expandir javafx.application.Application
 ```
 
 5. Ocorreu um erro na execução do programa, que acusou a falta de um método main, impossibilitando o começo da aplicação
+
+### 6) Crie um programa Java para imprimir duas linhas de texto usando duas linhas de código “System.out”, onde aparecerá o seu nome na primeira linha e na segunda linha aparecerá o time para o qual você torce.
+
+```java
+public class Main{
+
+    public static void main(String[] args){
+
+        System.out.println("Meu nome é: João");
+        System.out.println("Eu torço pro Corinthians");
+
+    }
+}
+```
