@@ -11,11 +11,11 @@
 ### 3) Crie um programa Java que imprima o seguinte texto “Terminei a primeira aula com um programa Java"
 
 ```java
-public class Main {  
+public class QuestaoTres {  
 
     public static void main(String[] args) {  
-        
-        System.out.println("Terminei a primeira aula com um programa Java!");
+        
+        System.out.println("Terminei a primeira aula com um programa Java!");
 
     }  
 }
@@ -24,8 +24,9 @@ public class Main {
 ### 4) Compile o programa desenvolvido no exercício anterior. A seguir, apague o arquivo ".class" gerado e tente executar o programa. O que aconteceu?
 
 ```bash
-$ Erro: Não foi possível localizar nem carregar a classe principal Main
-Causada por: java.lang.ClassNotFoundException: Main     
+$ Erro: Não foi possível localizar nem carregar a classe principal QuestaoQuatro
+Causada por: java.lang.ClassNotFoundException: QuestaoQuatro
+  
 ```
 
 4. Nos deparamos com o erro acima por que a JVM não achou o bytecode para executar.
@@ -33,7 +34,7 @@ Causada por: java.lang.ClassNotFoundException: Main
 ### 5) Mude o nome do método “main” para “start”, compile e execute. O que aconteceu?
 
 ```bash
-$ Erro: o método main não foi encontrado na classe Main; defina o método main como:
+$ Erro: o método main não foi encontrado na classe QuestaoCinco; defina o método main como:
    public static void main(String[] args)
 ou uma classe de aplicativo JavaFX deve expandir javafx.application.Application
 ```
@@ -43,7 +44,7 @@ ou uma classe de aplicativo JavaFX deve expandir javafx.application.Application
 ### 6) Crie um programa Java para imprimir duas linhas de texto usando duas linhas de código “System.out”, onde aparecerá o seu nome na primeira linha e na segunda linha aparecerá o time para o qual você torce.
 
 ```java
-public class Main{
+public class QuestaoSeis{
 
     public static void main(String[] args){
 
@@ -57,7 +58,7 @@ public class Main{
 ### 7) Experimente escrever todo o programa anterior em maiúsculo, compile e execute. O que aconteceu?
 
 ```java
-PUBLIC CLASS MAIN {
+PUBLIC CLASS QUESTAOSETE {
 
     PUBLIC STATIC VOID MAIN(STRING[] ARGS) {
 
@@ -69,16 +70,17 @@ PUBLIC CLASS MAIN {
 ```
 
 ```bash
-$ Main.java:1: error: class, interface, or enum expected
-PUBLIC CLASS MAIN {
+QuestaoSete.java:1: error: class, interface, or enum expected
+PUBLIC CLASS QUESTAOSETE {
 ^
-Main.java:6: error: class, interface, or enum expected
+QuestaoSete.java:6: error: class, interface, or enum expected
         SYSTEM.OUT.PRINTLN("EU TORÇO PRO CORINTHIANS");
         ^
-Main.java:8: error: class, interface, or enum expected
+QuestaoSete.java:8: error: class, interface, or enum expected
     }
     ^
 3 errors
+
 ```
 
 7. Não foi possível compilar, pois por uma diversidade de motivos, o código escrito não é um código Java válido.
@@ -86,10 +88,11 @@ Main.java:8: error: class, interface, or enum expected
 ### 8) Experimente salvar o arquivo com um nome diferente do nome da classe,compile e execute. O que aconteceu?
 
 ```bash
-$ Start.java:3: error: class Main is public, should be declared in a file named Main.java
-public class Main { 
+$ QuestaoOito.java:1: error: class main is public, should be declared in a file named main.java
+public class main {
        ^
 1 error
+
 ```
 
 8. O erro aconteceu já que meu arquivo não tem o mesmo nome que a classe então ele falhou na compilação. E como o nome da classe é Main, ele indica que o arquivo deve ser chamar Main.java
